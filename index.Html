@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Google Web Designer 16.1.0.0530">
+    <meta name="description" content="Portfólio de Design | RelaxxxX.">
+    <meta name="keywords" content="UI Design, Design Gráfico, Design Profissional, Portfólio de Design">
+    <title>RelaxxxX - Portfólio de Design Profissional</title>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/2QS3fSF.png">
+    <link rel="preload" href="https://i.imgur.com/kSN5Hsz.png" as="image" loading="lazy">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: #333; background: #f5f5f5; line-height: 1.6; }
+        header {
+            background: linear-gradient(135deg, #6A0DAD, #ff0080);
+            color: white;
+            padding: 2.5rem 0;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: rgba(0, 0, 0, 0);
+            padding: 10px;
+            border-radius: 8px;
+        }
+        header p {
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+            background: rgba(0, 0, 0, 0);
+            padding: 5px;
+            border-radius: 8px;
+        }
+        .hero {
+            text-align: center;
+            padding: 6rem 1rem;
+            background-image: url('https://i.imgur.com/Pm5ONcb.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .hero a {
+            padding: 1rem 2.5rem;
+            background-color: #ff0080;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .hero a:hover {
+            background-color: #d1006c;
+            transform: scale(1.05);
+        }
+        .services {
+            background-color: #fff;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .services h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .services .service-item {
+            display: inline-block;
+            width: 320px;
+            margin: 1rem;
+            padding: 2rem;
+            background-color: #f0f0f0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .services .service-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+        .services .service-item h3 {
+            font-size: 2rem;
+            color: #ff0080;
+            margin-bottom: 1.2rem;
+        }
+        .services .service-item p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        .contact-cta {
+            margin-top: 3rem;
+            font-size: 1.2rem;
+        }
+        .contact-cta a {
+            color: #ff0080;
+            text-decoration: underline;
+        }
+        .contact-cta a:hover {
+            color: #d1006c;
+        }
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            .services .service-item {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>RelaxxxX - Design Profissional</h1>
+        <p>Transformando suas ideias em interfaces incríveis</p>
+    </header>
+    
+    <div class="hero">
+        <h2>Design Criativo e Funcional para Seus Projetos</h2>
+        <a href="#contact">Saber mais</a>
+    </div>
+    
+    <section class="services">
+        <h2>Serviços</h2>
+        <div class="service-item">
+            <h3>UI Design</h3>
+            <p>Interfaces funcionais e belas para o que você quiser.</p>
+        </div>
+        <div class="service-item">
+            <h3>Design Gráfico</h3>
+            <p>Criação de identidade visual, logos, e branding completo.</p>
+        </div>
+        <div class="service-item">
+            <h3>48 Horas</h3>
+            <p>Entregamos o trabalho em 48 horas.</p>
+        </div>
+        <div class="contact-cta">
+            <p>Interessado em algum dos serviços? <a href="#contact">Entre em contato</a> e vamos começar seu projeto!</p>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.onclick = function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            };
+        });
+    </script>
+
+</body>
+</html>
